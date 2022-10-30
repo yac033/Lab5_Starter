@@ -20,7 +20,8 @@ function init() {
   })
   button.addEventListener('click', (event)=>{
     sound.volume = volume / 100;
-    if(sound.src == "assets/audio/party-horn.mp3"){
+    console.log(sound.src);
+    if(sound.src == "http://127.0.0.1:5500/assets/audio/party-horn.mp3"){
       jsConfetti.addConfetti();
     }
     sound.play();
